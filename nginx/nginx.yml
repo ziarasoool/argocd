@@ -8,7 +8,7 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      app: nginxx
+      app: nginx
   template:
     metadata:
       labels:
@@ -26,7 +26,7 @@ metadata:
   name: nginx-service
 spec:
   selector:
-    app: nginxx
+    app: nginx
   ports:
     - protocol: TCP
       port: 80
